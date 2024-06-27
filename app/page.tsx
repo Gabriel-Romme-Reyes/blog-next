@@ -33,8 +33,9 @@ export default async function Home() {
         <Link
           href={`/blog/${post.currentSlug}`}
           className="hover:shadow-lg dark:shadow-white rounded-lg"
+          key={idx}
         >
-          <Card key={idx} className="grid grid-cols-3 gap-2">
+          <Card className="grid grid-cols-3 gap-2">
             <div className="p-5 col-span-3 md:col-span-2">
               {" "}
               <h1 className="text-xl font-bold">{post.title}</h1>
